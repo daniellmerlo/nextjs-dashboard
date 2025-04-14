@@ -14,7 +14,7 @@ const FormSchema = z.object({
   status: z.enum(["pending", "paid"]),
   date: z.string(),
 });
-
+// teste Daniel
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
